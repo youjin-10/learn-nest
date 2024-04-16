@@ -19,5 +19,5 @@ export class AppController {
 
 - it could've been returing string instead of calling `getHello` function. why?
 - `controller` is for hanling requests and responses
-- `service` is for handling business logic
+- `service` is for handling business logic and queries..
 - this way we can separate concerns/purposes and also it helps to write test codes easier
