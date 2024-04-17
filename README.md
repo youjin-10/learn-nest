@@ -1,4 +1,4 @@
-### Learning NestJS
+### Learning NestJS (TIL)
 
 #### controller & service
 
@@ -21,3 +21,9 @@ export class AppController {
 - `controller` is for hanling requests and responses
 - `service` is for handling business logic and queries..
 - this way we can separate concerns/purposes and also it helps to write test codes easier
+
+#### class for DTOs
+
+- why do we use `class` for DTOs when `type` of TypeScript works as well?
+- `class` supports decorators like `@IsString()` from `class-validator` package to specify validation rules directly in DTO class.
+- `type` does not support decorators - it would not be able to use powerful validation features.
