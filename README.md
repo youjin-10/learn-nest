@@ -36,3 +36,8 @@ export class AppController {
   - NestJS or other frameworks would handle creating instances instead of you (developers), so there's no need for us to know details about instantiating a dependency.
   - Also, DI helps use resources like memory effectively. Let's say several different controllers need `SomeService`. If we create instances everywhere, it would be a waste of resource. With benefit of DI, controllers can use methods of `SomeService` with one instance (singleton).
   - Thridly, it follows `Seperation of Concerns`. Controller takes care of its own job instead of being coupled with dependencies by knowing how to instantiate them.
+
+#### access to response, request object of Express
+
+- possible not recommended
+- 🙋 why? there are Express and Fastify underneath, and if you want to switch to Fastify but some logic has direct access to Express objects, it wouldn't be easy to do it.
