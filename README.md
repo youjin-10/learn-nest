@@ -1,5 +1,14 @@
 ### Learning NestJS (TIL)
 
+#### layers
+
+- **received a request...**
+- **pipe**: validate data contained in the request
+- **guard**: make sure the user is authenticated
+- **controller**: route the request to a particular function
+- **service**: run some business logic
+- **repository**: access a database
+
 #### controller & service
 
 ```javascript
